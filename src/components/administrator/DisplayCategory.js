@@ -23,17 +23,14 @@ export default function DisplayCategory() {
         return (
             <MaterialTable
                 // height="50%"
-                title={<span className={classes.heading}>Company Details</span>}
+                title={<span className={classes.heading}>Category List</span>}
                 columns={[
-                    // { title: 'Company Name', field: 'companyname' },
-                    { title: 'Product Name', field: 'productname' },
-                    { title: 'Description', field:},
-                    { title: 'Email Address', render: rowData => <div>{rowData.emailaddress}<br />{rowData.mobilenumber}</div> },
-                    { title: 'Status', field: 'status' },
+                    { title: 'Category Name', field: 'categoryname'},
+                    { title: 'Description', field:"description"},
                     { title: 'Last Update', render: rowData => <div>{rowData.updateat}<br />{rowData.createat}<br />{rowData.createdby}</div> },
-                    { title: 'Logo', render: rowData => <Avatar src={`${ServerURL}/images/${rowData.logo}`}></Avatar> }
+                    { title: 'Icon', render: rowData => <Avatar src={`${ServerURL}/images/${rowData.icon}`}></Avatar> }
                 ]}
-                data={companies}
+                data={category}
                 actions={[
                     {
                         icon: 'save',

@@ -24,9 +24,11 @@ export const useStyles= makeStyles({
         gap:3,
     },
     heading:{
+        display:"flex",
         fontFamily:"Poppins",
         fontSize:"18px",
         fontWeight:"bold",
         textAlign:"center",
+        alignItems:"center"
     }
 })

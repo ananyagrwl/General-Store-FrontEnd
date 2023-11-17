@@ -16,12 +16,25 @@ export const useStyles= makeStyles({
         padding:"20px",
         justifyContent:"center",
         alignItems:"center",
-        background:"white"
+        // background:"white"
     },
     heading:{
+        display:"flex",
+        alignItems:"center",
         fontFamily:"Poppins",
         fontSize:"18px",
         fontWeight:"bold",
         textAlign:"center",
+    },
+    row:{
+        display:"flex",
+        alignItem:"center",
+        gap:3,
+    },
+    hide:{
+        display:"hidden",
+    },
+    unhide:{
+        display:"flex",
     }
 })
